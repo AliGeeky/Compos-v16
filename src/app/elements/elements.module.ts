@@ -13,6 +13,6 @@ import { ElementHomeComponent } from './element-home/element-home.component';
     CommonModule,
     ElementsRoutingModule
   ],
-  exports:[ElementHomeComponent]
+
 })
 export class ElementsModule { }
