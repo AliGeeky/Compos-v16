@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ElementsRoutingModule } from './elements-routing.module';
+import { ElementsHomeComponent } from './elements-home/elements-home.component';
+import { ElementHomeComponent } from './element-home/element-home.component';
+
+
+@NgModule({
+  declarations: [
+    ElementsHomeComponent,
+    ElementHomeComponent
+  ],
+  imports: [
+    CommonModule,
+    ElementsRoutingModule
+  ]
+})
+export class ElementsModule { }
