@@ -5,26 +5,15 @@
 <app-divider>
     Tab Component
 </app-divider>
-<div class="ui grid">
-    <div class="four wide column">
-      <div class="ui vertical fluid tabular menu">
-        <a routerLink="" class="active item">
-          Bio
-        </a>
-        <a routerLink="companies" class="item">
-          Pics
-        </a>
-        <a routerLink="partners" class="item">
-          Companies
-        </a>
+<app-tabs>
+    <a routerLink="./" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" class="item">
+        Bio
+    </a>
+    <a routerLink="companies" routerLinkActive="active" class="item">
+        Pics
+    </a>
+    <a routerLink="partners" routerLinkActive="active" class="item">
+        Companies
+    </a>
 
-      </div>
-    </div>
-    <div class="twelve wide stretched column">
-      <div class="ui segment">
-          <router-outlet>
-          
-          </router-outlet> 
-      </div>
-    </div>
-  </div>
+</app-tabs>

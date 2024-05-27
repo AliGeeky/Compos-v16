@@ -9,6 +9,7 @@ import { DividerComponent } from '../shared/divider/divider.component';
 import { BiographyComponent } from './biography/biography.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { PartnersComponent } from './partners/partners.component';
         BiographyComponent,
         CompaniesComponent,
         PartnersComponent,
+        TabsComponent,
     ],
     imports: [
         CommonModule,
