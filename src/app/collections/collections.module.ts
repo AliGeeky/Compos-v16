@@ -6,12 +6,18 @@ import { CollectionHomeComponent } from './collection-home/collection-home.compo
 import { TableComponent } from './table/TableComponent';
 import { SharedModule } from "../shared/shared.module";
 import { DividerComponent } from '../shared/divider/divider.component';
+import { BiographyComponent } from './biography/biography.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { PartnersComponent } from './partners/partners.component';
 
 
 @NgModule({
     declarations: [
         CollectionHomeComponent,
         TableComponent,
+        BiographyComponent,
+        CompaniesComponent,
+        PartnersComponent,
     ],
     imports: [
         CommonModule,
