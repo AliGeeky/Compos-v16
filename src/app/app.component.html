@@ -1,9 +1,15 @@
-<div class="ui container">
+<div class="ui container mt-5">
   <div class="ui pointing menu">
     <a class="item" routerLinkActive="active" routerLink="/collections">Colections</a>
     <a class="item" routerLinkActive="active" routerLink="/elements">Elements</a>
     <a class="item" routerLinkActive="active" routerLink="/views">views</a>
-    <a class="item"routerLinkActive="active" routerLink="mods">Modules</a>
+    <a class="item" routerLinkActive="active" routerLink="mods">Modules</a>
+    <div class="right menu">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="search..." />
+        <i class="search link icon"></i>
+      </div>
+    </div>
   </div>
   <div class="ui segment">
     <router-outlet></router-outlet>
