@@ -10,6 +10,9 @@ export class ModalComponent implements OnInit {
   @Output() onClose = new EventEmitter();
   @Input() isExistFooter = true;
   @Input() defaultButton = true;
+  
+
+
   ngOnInit(): void {
     document.body.appendChild(this.er.nativeElement);
   }
