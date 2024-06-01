@@ -1,12 +1,17 @@
 <div (click)="OnCloseClick()" class="ui dimmer visible active">
   <div (click)="$event.stopPropagation()" class="ui modal visible active">
     <i class="close icon" (click)="OnCloseClick()"></i>
-    <div class="header">Header</div>
-    <div class="content">
-      <p>This is content</p>
+    <div class="header">
+      <ng-content select="#modal-header"></ng-content>
     </div>
-    <div class="actions actions-defult">
-      <button (click)="OnCloseClick()" class="ui button">OK</button>
+    <div class="content">
+      <ng-content select="#modal-content"></ng-content>
+    </div>
+    <div class="actions actions-defult" *ngIf="isExistFooter" >
+      <button *ngIf="defaultButton" (click)="OnCloseClick()" class="ui button">
+        OK
+      </button>
+      <ng-content select="#modal-footer"></ng-content>
     </div>
   </div>
 </div>
